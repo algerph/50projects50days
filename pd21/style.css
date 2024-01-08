@@ -1,0 +1,58 @@
+:root {
+    --color-little-princess: #E9DCE5;
+    --color-sunset-purple: #A865B5;
+    --color-luxury-purple: #743089;
+    --color-matte-purple: #392A48;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-luxury-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px var(--color-matte-purple);
+    background: var(--color-little-princess);
+}
+
+.fill {
+    background-image: url('https://source.unsplash.com/random/150x150');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.hold {
+    border: solid 5px var(--color-sunset-purple);
+}
+
+.hovered {
+    background-color: black;
+    border-color: var(--color-little-princess);
+    border-style: dashed;
+}
+
+
+@media(max-width: 800px) {
+    body {
+        flex-direction: column;
+        overflow: auto;
+    }
+    
+    .empty {
+        margin: auto;
+        scale: 0.80;
+    }
+}
