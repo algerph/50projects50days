@@ -12,6 +12,7 @@
 }
 
 body {
+    background-color: var(--color-sunset-purple);
     font-family: 'Roboto', 'sans-serif';
     display: flex;
     flex-direction: column;
@@ -20,4 +21,25 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+div {
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: var(--color-little-princess);
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
 }
