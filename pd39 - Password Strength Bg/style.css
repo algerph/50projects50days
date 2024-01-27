@@ -1,0 +1,31 @@
+:root {
+    --color-little-princess: #E9DCE5;
+    --color-sunset-purple: #A865B5;
+    --color-luxury-purple: #743089;
+    --color-matte-purple: #392A48;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.background {
+    background: url('https://plus.unsplash.com/premium_photo-1694743671394-60034a1b2f65?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
