@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+    --color-little-princess: #E9DCE5;
+    --color-sunset-purple: #A865B5;
+    --color-luxury-purple: #743089;
+    --color-matte-purple: #392A48;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.magic {
+    background-color: var(--color-luxury-purple);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px rgba(116, 48, 137, 0.5);
+    z-index: 100;
+}
+
+.magic:focus {
+    outline: none;
+}
+
+.magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.boxes.big {
+    width: 600px;
+    height: 600px;
+    min-height: 600px;
+}
+
+.boxes.big .box {
+    transform: rotateZ(360deg);
+}
+
+.box {
+    background-image: url('https://media1.tenor.com/m/COcSmM3DDf0AAAAC/he-hehe.gif');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
+    height: 125px;
+    width: 125px;
+    transition: 0.4s ease;
+}
+
+.box::after {
+    content: '';
+    background-color: var(--color-luxury-purple);
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before {
+    content: '';
+    background-color: var(--color-matte-purple);
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    width: 100%;
+    height: 15px;
+    transform: skewx(45deg);
+}
