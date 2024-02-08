@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* NOTE: USE "is()" & "nesting &"! */
 
 :root {
     --color-little-princess: #E9DCE5;
